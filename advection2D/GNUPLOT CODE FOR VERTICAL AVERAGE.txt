@@ -1,0 +1,19 @@
+
+
+
+# Send output to a PNG file
+#set terminal png enhanced 
+# Set the name of the output file
+
+set output "verticalaverage.png"
+
+# Set ranges and labels for axes
+set xrange [0:30.0]
+set yrange [0:0.25]
+set xlabel "x"
+set ylabel "u"
+
+# Plot the data 
+plot "VerticalAverage.dat" using 1:2 notitle with line
+
+# End of file
